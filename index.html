@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coin Flip</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <!-- <img src='' alt='coin image'> -->
+    <div>
+      <select>
+        <option value='' disabled selected>Choose your guess</option>
+        <option value='head'>Head</option>
+        <option value='tail'>Tail</option>
+      </select>
+      <button type='button'>Flip the coin</button>
+    </div>
+    <h1 id='results'></h1>
+    
+    <script type="text/javascript">
+      document.querySelector('button').addEventListener('click', flipCoin)
+
+        function flipCoin() {
+          const guess = document.querySelector('select').value
+          const result = document.querySelector('#results')
+          const compare = document.querySelector('h1')
+
+          fetch(`/api?guess=${guess}`)
+            .then(response => response.json())
+            .then((data) => {
+              console.log(data);
+              result.innerText = `${data.result}, ${data.compare}`
+            });
+        }
+    </script>
+
+  </body>
+</html>
