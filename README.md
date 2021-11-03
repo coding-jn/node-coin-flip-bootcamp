@@ -1,22 +1,13 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# Node Coin Flip 💰
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+Pick your guess, head or tail? Then, flip the coin to compare the results to your guess.
 
-### How to submit your code for review:
+**Live Demo:** <a href="https://coin-flip-jenna-nguyen.netlify.app/">Demo</a><i> for display purposes only</i>
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img width="919" alt="Coin Flip" src="https://user-images.githubusercontent.com/88993361/140014974-48903803-3225-45be-bb4a-141696478af4.png">
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How It's Made
+The application uses the fs and http modules, more specifically the http creates the server and fs reads the html file. Because this was a simple program I was able to include Vanilla ES6 JS in it to save time spent writing code and to condense the information sent to the user.
+
+## What I Learned
+This was my first application using Vanilla ES6 JS so it was interesting to learn more about the different types of JS and its technicalities. Overall, this program was just great practice for Node.
